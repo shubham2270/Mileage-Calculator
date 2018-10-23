@@ -1,0 +1,73 @@
+html,body{
+    height: 100%;
+    width: 100%;
+  
+}
+
+body{
+    background-color: rgb(32, 32, 32) !important;
+}
+ 
+.card{
+    width: 500px;
+    height: 500px;
+    background-color: #1fd1f9;
+    background-image: linear-gradient(-315deg, #1fd1f9 0%, #b621fe 74%);
+    box-shadow: rgb(15, 15, 15) 8px 8px 40px;
+}
+
+.custombtn{
+    background-color: rgb(183, 0, 255);
+    width: 45%;
+    color:white;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+.custombtn:hover{
+    background-color: rgb(240, 227, 49);
+    color: #333333;
+}
+
+.heading{
+    color: white;
+}
+
+
+#result1, #result2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    animation: pop 1s;
+    transition: .4s ease-out;
+    transform: scale(1.2);
+    
+    
+}
+
+#errMsg1, #errMsg2{
+    color: rgb(245, 23, 23);
+    transition: 1s;
+    transform: scale(0.9);
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: 3px rgb(236, 236, 236) solid;
+    display: none;
+    
+    
+   
+}
+
+
+@media only screen and (max-width:768px){
+    #result1, #result2{
+        font-size: 2.5rem;
+    }
+
+    #errMsg1, #errMsg2{
+        font-size: 17px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+}
